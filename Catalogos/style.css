@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -108,9 +108,9 @@ header {
     flex-wrap: wrap;
     gap: 10%;
     justify-content: center;
-    margin: 0 auto;
-    
 }
+
+
 
 .card-produto {
     width: 350px;
@@ -119,6 +119,7 @@ header {
     border-radius: 30px;
     text-align: center;
     margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
 }
 
 .card-produto img {
@@ -162,12 +163,7 @@ header {
 
 
 
-/* EMAIL */
-.icone-email {
-    width: 40px;
-    align-items: center;
-}
- 
+
 
 
 /* RODAPE */
@@ -189,11 +185,17 @@ footer {
     margin-left: 10px;
 }
 
-footer p{
+/* EMAIL */
+.icone-email {
+    width: 40px;
+    align-items: center;
+}
+
+footer p {
     font-family: "Abel", system-ui;
     margin-left: 10px;
-     color: #FACC14;
-     font-size: 30px;
+    color: #FACC14;
+    font-size: 30px;
 }
 
 
