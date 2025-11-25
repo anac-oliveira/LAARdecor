@@ -61,8 +61,33 @@ header {
 }
 
 
-.icone-login {
-    height: 50px;
+.box-busca {
+  position: relative;
+  width: 60%;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.icone-lupa g{
+    position: absolute;
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.campo-busca {
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  padding-left: 2.5rem;
+  font-size: 1rem;
+}
+
+.menu-barras {
+  width: 50px;
+  color: #000000;
+  display: none;
+  z-index: 2;
 }
 
 
@@ -198,7 +223,27 @@ footer p {
     font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .icone_home {
+    display: none;
+  }
 
+  .box_busca {
+    position: fixed;
+    overflow-y: hidden;
+    top: -100px;
+    z-index: 2;
+    right: 30px;
+    transition: .5s;
+    width: 80%;
+  }
+  
+  .menu_barras{
+    display: block;
+    right: 30px;
+  }
+
+}
 
 @media screen and (max-width: 900px) {
 
