@@ -53,6 +53,7 @@
     /* HEADER */
     header {
         background-color: #657047;
+        height: 85px;
     }
 
     .container-header {
@@ -227,12 +228,13 @@
     .icone-email {
         width: 40px;
         align-items: center;
+        margin-bottom: 10px;
 
     }
 
     footer p {
         font-family: "Abel", system-ui;
-        margin-left: 10px;
+        margin-left: 5px;
         color: #FACC14;
         font-size: 30px;
     }
