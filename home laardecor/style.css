@@ -12,7 +12,7 @@ body {
     background-color: #FEF8E8;
 }
 
-.container_cabecalho {
+.container-cabecalho {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -31,40 +31,35 @@ header {
 
 .logo {
     width: 100px;
-
-
-}
-
-.box_busca {
-    width: 60%;
-    max-width: 500px;
-    margin: 0 10px;
-    /* background-color: aqua;*/
-    position: relative;
-}
-
-.lupa {
-    height: 24px;
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    fill: #b0b0b0;
+    margin-left: 50px;
 
 }
 
-.busca {
-    width: 100%;
-    height: 42px;
-    border-radius: 10px;
-    border: solid 1px #cccccc;
-    padding-left: 2.5rem;
-    font-size: 1rem;
-}
+ .box-busca {
+        position: relative;
+        width: 60%;
+        max-width: 500px;
+        margin: 0 10px;
+        
+    }
 
-.login {
-    width: 50px;
-    cursor: pointer;
-}
+    .lupa {
+        position: absolute;
+        width: 36px;
+        aspect-ratio: 1;
+        top: 3px;
+        left: 3px;
+        fill: #623820;
+    }
+
+    .busca {
+        width: 100%;
+        height: 42px;
+        border-radius: 10px;
+        border: solid 1px #cccccc;
+        padding-left: 2.5rem;
+        font-size: 1rem;
+    }
 
 /* banner */
 .banner {
@@ -199,6 +194,7 @@ img {
 .envelope {
     width: 40px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .rodape p {
@@ -216,6 +212,7 @@ img {
         position: fixed;
         bottom: 0;
         width: 100%;
+        height: 87px;
     }
 
     .rolagem {
@@ -224,5 +221,11 @@ img {
         margin-bottom: 50px;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .whatsapp img {
+        display: none;
     }
 }
