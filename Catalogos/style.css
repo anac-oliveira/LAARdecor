@@ -70,36 +70,38 @@
     }
 
     .icone-logo {
-        height: 80px;
-        display: flex;
+        height: 90px;
+        
     }
 
 
-        .box-busca {
-            position: relative;
-            width: 60%;
-            max-width: 500px;
-            margin: 0 10px;
-            text-align: center;
-        }
+    .box-busca {
+        position: relative;
+        width: 60%;
+        max-width: 500px;
+        margin: 0 10px;
+        text-align: center;
+    
+    }
 
-        .icone-lupa {
-            position: absolute;
-            width: 36px;
-            aspect-ratio: 1;
-            top: 3px;
-            left: 3px;
-            fill: #623820;
-        }
+    .icone-lupa {
+        position: absolute;
+        width: 36px;
+        aspect-ratio: 1;
+        top: 3px;
+        left: 3px;
+        fill: #623820;
+    }
 
-        .campo-busca {
-            width: 100%;
-            height: 42px;
-            border-radius: 10px;
-            border: solid 1px #cccccc;
-            padding-left: 2.5rem;
-            font-size: 1rem;
-        }
+    .campo-busca {
+        width: 100%;
+        height: 42px;
+        border-radius: 20px;
+        border: solid 1px #cccccc;
+        padding-left: 50px;
+        font-size: 20px;
+        font-family: "Abel", system-ui;
+    }
 
     .menu-barras {
         width: 50px;
@@ -149,21 +151,27 @@
     .cards-produto {
         display: flex;
         flex-wrap: wrap;
-        gap: 10%;
+        gap: 2rem;
+        /* antes tinha 10%, isso quebrava a grade */
         justify-content: center;
     }
 
 
 
+
     .card-produto {
-        width: 350px;
+        width: 30%;
+        /* agora cabem 3 por fileira */
+        max-width: 350px;
+        /* mantém limite do seu design */
         height: 520px;
         background-color: #657047;
         border-radius: 30px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         box-shadow: 0 4px 4px 2px #00000025;
     }
+
 
     .card-produto img {
         width: 100%;
@@ -285,8 +293,8 @@
         }
     }
 
-      @media screen and (max-width: 535px) {
-        .whatsapp img{
-         display: none;
+    @media screen and (max-width: 535px) {
+        .whatsapp img {
+            display: none;
         }
-      }
+    }
