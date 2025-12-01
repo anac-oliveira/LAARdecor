@@ -251,10 +251,10 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  /* position: fixed;   fixa no final da tela */
+  /* position: fixed;   fixa no final da tela
   bottom: 0;
   /* gruda no rodapé */
-  left: 0;
+  left: 0; 
 }
 
 footer p {
@@ -281,6 +281,7 @@ footer p {
   .cadastro-coluna1,
   .cadastro-coluna2 {
     width: 100%;
+    padding: 10px;
   }
 
   .container-cadastro input[type="button"] {
