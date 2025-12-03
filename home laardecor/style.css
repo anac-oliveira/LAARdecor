@@ -65,7 +65,7 @@ header {
     right: 30px;
     background: none;
     z-index: 3;
-    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    transition:  0.5s;
     cursor: pointer;
 
 }
@@ -335,7 +335,7 @@ img {
 
     /* Ajustes finais para telas muito pequenas */
     .campo-busca:focus {
-        width: 250px;
+        width: 200px;
     }
 
     .btn-busca {
