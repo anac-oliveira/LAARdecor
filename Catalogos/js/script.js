@@ -16,7 +16,7 @@ function mostrarMenu() {
     } else {/*se não*/
         sombra.style.top = "0";//exibido
         busca.style.top = "120px";
-        menu.style.position = "fixed";
+        menu.style.position = "absolute";
         busca.style.transition = ".5s";
     }
 }
