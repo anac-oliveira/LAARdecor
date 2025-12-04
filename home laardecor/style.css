@@ -126,16 +126,16 @@ header {
 .linha3 {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 100%;
-    gap: 1rem;
+   
 }
 
 .area,
 .cozinha,
 .banheiro,
 .quarto {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 
@@ -348,4 +348,17 @@ img {
         width: 76px;
         margin-left: 10px;
     }
+}
+
+@media (max-width: 500px) {
+    .envelope {
+    width: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+font-size: 25px ;
+}
+
 }
