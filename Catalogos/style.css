@@ -67,11 +67,13 @@
     .icone-voltar {
         height: 42px;
         fill: #FACC14;
+        cursor: pointer;
     }
 
     .icone-logo {
         height: 90px;
-        
+        cursor: pointer;
+
     }
 
 
@@ -81,7 +83,7 @@
         max-width: 500px;
         margin: 0 10px;
         text-align: center;
-    
+
     }
 
     .icone-lupa {
@@ -98,16 +100,17 @@
         height: 42px;
         border-radius: 20px;
         border: solid 1px #cccccc;
-        padding-left: 50px;
+        padding-left: 45px;
         font-size: 20px;
         font-family: "Abel", system-ui;
     }
 
     .menu-barras {
         width: 50px;
-        color: #000000;
+        color: #FACC14;
         display: none;
         z-index: 2;
+
     }
 
 
@@ -118,7 +121,7 @@
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        /* height: 535px; */
+        height: 535px;
         aspect-ratio: 3.2;
     }
 
@@ -130,7 +133,6 @@
         align-items: center;
         margin: 100px auto;
     }
-
 
     .titulo span {
         font-size: 48px;
@@ -148,23 +150,21 @@
         box-shadow: 0 4px 4px 2px #00000025;
     }
 
+
+    /*ÁREA DOS CARDS*/
     .cards-produto {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
-        /* antes tinha 10%, isso quebrava a grade */
         justify-content: center;
     }
 
 
-
-
+    /*CARD (DESKTOP: 3 POR LINHA)*/
     .card-produto {
         width: 30%;
-        /* agora cabem 3 por fileira */
         max-width: 350px;
-        /* mantém limite do seu design */
-        height: 520px;
+        height: 550px;
         background-color: #657047;
         border-radius: 30px;
         text-align: center;
@@ -172,14 +172,12 @@
         box-shadow: 0 4px 4px 2px #00000025;
     }
 
-
     .card-produto img {
         width: 100%;
     }
 
-
     .card-produto p {
-        padding: 0 10px;
+        padding: 10px;
         font-size: 20px;
         font-family: "Be Vietnam Pro";
         margin: 25px;
@@ -191,6 +189,7 @@
         background-color: #FACC14;
         border-radius: 7px;
         font-size: 20px;
+        padding: 5px;
     }
 
     /* WHATSAPP */
@@ -247,6 +246,8 @@
         font-size: 30px;
     }
 
+
+    /*MEDIASS*/
     @media screen and (max-width: 768px) {
         .box-busca {
             position: fixed;
@@ -256,21 +257,21 @@
             right: 30px;
             transition: .5s;
             width: 80%;
+            right: 50px;
         }
 
         .menu-barras {
             display: block;
-            right: 30px;
+            right: 50px;
             fill: #FACC14;
         }
 
-        .icone-logo {
-            margin-left: 10px;
-        }
 
         .icone-voltar {
             display: none;
         }
+
+        
     }
 
     @media screen and (max-width: 900px) {
@@ -280,7 +281,7 @@
             width: 95%;
         }
 
-        
+
     }
 
     @media screen and (max-width: 768px) {
@@ -291,78 +292,101 @@
         }
     }
 
-/* =========================
-   TABLET (até 1024px)
-========================= */
-@media (max-width: 1024px) {
+    @media (max-width: 1200px) {
 
-    .titulo span {
-        font-size: 36px;
+        .titulo span {
+            font-size: 40px;
+        }
+
+        .card-produto {
+            width: 46%;
+            /* 2 por linha */
+            height: 525px;
+            margin-bottom: 20px;
+        }
+
+        .card-produto p {
+            font-size: 23px;
+            margin: 20px;
+        }
     }
-
-    .titulo {
-        margin: 60px auto;
-    }
-
-    .cards-produto {
-        gap: 1.5rem;
-    }
-
-    .card-produto {
-        width: 45%;   /* 2 cards por fileira */
-        height: 540px;
-    }
-
-    .card-produto p {
-        font-size: 20px;
-        margin: 20px;
-    }
-}
-
-/* criar um media pra 780 */
-
-/* =========================
-   CELULAR (até 600px)
-========================= */
-@media (max-width: 600px) {
-
-    .titulo span {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    .titulo hr {
-        width: 140px;
-    }
-
-    .cards-produto {
-        gap: 1rem;
-    }
-
-    .card-produto {
-        width: 30%;   /* 1 card por fileira */
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .card-produto img {
-        border-radius: 30px 30px 0 0;
-    }
-
-    .card-produto p {
-        font-size: 16px;
-        margin: 15px;
-    }
-
-    .valor {
-        font-size: 16px;
-        padding: 6px 10px;
-    }
-}
-
     
-    @media screen and (max-width: 535px) {
+    
+
+    @media (max-width: 770px) {
+
+        .titulo {
+            margin: 60px auto;
+        }
+
+        .titulo span {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .titulo hr {
+            width: 120px;
+        }
+
+        .card-produto {
+            width: 90%;
+            /* 1 por linha */
+
+        }
+
+        .card-produto p {
+            font-size: 23px;
+            margin: 15px;
+        }
+        
+        .valor {
+            font-size: 23px;
+        }
+    }
+   
+
+    @media (max-width: 380px) {
+
+        .titulo {
+            margin: 60px auto;
+        }
+
+        .titulo span {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .titulo hr {
+            width: 120px;
+        }
+
+        .card-produto {
+            width: 90%;
+            /* 1 por linha */
+
+        }
+
+        .card-produto p {
+            font-size: 24px;
+            margin: 23px;
+        }
+
+        .valor {
+            font-size: 23px;
+            padding: 5px;
+        }
+    }
+
+
+
+    @media screen and (max-width: 600px) {
         .whatsapp img {
             display: none;
         }
+        .menu-barras {
+            display: block;
+            right: 25px;
+            fill: #FACC14;
+        }
+
     }
