@@ -217,24 +217,13 @@ img {
 
 
 .rodape {
-
+    width: 100%;
     height: 87px;
-    background-color: var(--corprincipal);
-
-    text-align: center;
-
+    background-color: #657047;
     display: flex;
-    justify-content: center;
     align-items: center;
-
-
-
-}
-
-.envelope {
-    width: 40px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    justify-content: center;
+    cursor: pointer 
 }
 
 .rodape p {
@@ -352,13 +341,13 @@ img {
 
 @media (max-width: 500px) {
     .envelope {
-    width: 30px;
+    width: 40px;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-.rodape p {
-font-size: 25px ;
+.rodape {
+height: 90px ;
 }
 
 }
